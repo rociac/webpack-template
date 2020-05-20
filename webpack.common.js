@@ -1,24 +1,24 @@
 module.exports = {
   entry: {
-    main: "./src/index.js",
+    main: './src/index.js',
   },
   module: {
     rules: [
       {
         test: /\.html$/,
-        use: ["html-loader"]
+        use: ['html-loader'],
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
+        test: /\.(svg|png|jpg|gif|ico)$/,
         use: {
-          loader: "file-loader",
+          loader: 'file-loader',
           options: {
-            name: "[name]-[hash].[ext]",
-            outputPath: "img",
-            esModule: false
-          }
-        }
-      }
-    ]
-  }
+            name: '[name]-[hash].[ext]',
+            outputPath: 'img',
+            esModule: false,
+          },
+        },
+      },
+    ],
+  },
 };
