@@ -1,23 +1,36 @@
 {
   "name": "webpack-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webpack template with jest, babel and sass",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rociac/webpack-template.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Rodolfo Cisneros",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rociac/webpack-template/issues"
+  },
+  "homepage": "https://github.com/rociac/webpack-template#readme",
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
     "css-loader": "^3.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.13.1",
     "file-loader": "^5.0.2",
     "html-loader": "^0.5.5",
+    "jest": "^26.0.1",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.1",
@@ -32,5 +45,11 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "terser-webpack-plugin": "^3.0.1",
     "webpack-merge": "^4.2.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/test/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/src/test/__mocks__/styleMock.js"
+    }
   }
 }
