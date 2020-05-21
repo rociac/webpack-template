@@ -1,16 +1,24 @@
 {
   "name": "webpack-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webpack template with jest, babel and sass",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rociac/webpack-template.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Rodolfo Cisneros",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rociac/webpack-template/issues"
+  },
+  "homepage": "https://github.com/rociac/webpack-template#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
