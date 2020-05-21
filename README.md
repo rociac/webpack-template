@@ -19,9 +19,9 @@
 
 ## Installation
 
-1. Clone the repository in your local folder.
+1. Fork this project and clone it with
 ```
-git clone https://github.com/rociac/webpack-template.git
+git clone
 ```
 2. Run
 ```
